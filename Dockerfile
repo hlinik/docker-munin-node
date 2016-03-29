@@ -6,7 +6,6 @@ ADD ./plugins/* /usr/share/munin/plugins/
 
 RUN ln -s /usr/share/munin/plugins/cpu_by_process /etc/munin/plugins/cpu_by_process && munin-node-configure --shell | sh && mkdir -p /var/log/munin/; chown -R munin:munin /var/log/munin/
 
-
 ADD bootstrap.sh /root/bootstrap.sh
 
 CMD /root/bootstrap.sh
