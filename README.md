@@ -1,3 +1,5 @@
+[![](https://badge.imagelayers.io/sahsu/docker-munin-node:latest.svg)](https://imagelayers.io/?images=sahsu/docker-munin-node:latest 'Get your own badge on imagelayers.io')
+
 # clone from https://github.com/Wayt/docker-munin-server
 1. basic usage 
 ```
