@@ -1,9 +1,9 @@
 [![](https://badge.imagelayers.io/sahsu/docker-munin-node:latest.svg)](https://imagelayers.io/?images=sahsu/docker-munin-node:latest 'Get your own badge on imagelayers.io')
 
 # clone from https://github.com/Wayt/docker-munin-server
-1. basic usage 
+1. basic usage ( startup munin-node with docker-compose )
 ```
-docker run --privileged -p 4949:4949 --net=host -d -e "ALLOW=cidr_allow 0.0.0.0/0"  munin-node
+./dockergo
 ```
 1. you can use with my docker-munin-server within docker-compuse
 ```

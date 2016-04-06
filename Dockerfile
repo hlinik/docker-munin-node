@@ -1,5 +1,11 @@
 FROM ubuntu
 
+# munin 2.0.55
+RUN apt-get install -y software-properties-common && \
+add-apt-repository -y ppa:pneu/munin && \
+apt-get update -y && \
+apt-get clean && rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
 RUN apt-get update -y && apt-get install -y munin-node && apt-get clean && rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ADD ./plugins/* /usr/share/munin/plugins/
