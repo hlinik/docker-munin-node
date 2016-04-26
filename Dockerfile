@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:14.04
 
 # munin 2.0.55
 RUN apt-get install -y software-properties-common && \
