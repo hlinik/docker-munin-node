@@ -6,7 +6,7 @@ add-apt-repository -y ppa:pneu/munin && \
 apt-get update -y && \
 apt-get clean && rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN apt-get update -y && apt-get install -y munin-node telnet && apt-get clean && rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/* /tmp/* /var/tmp/*
+RUN apt-get update -y && apt-get install -y munin-node telnet wget && apt-get clean && rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ADD ./plugins/* /usr/share/munin/plugins/
 
