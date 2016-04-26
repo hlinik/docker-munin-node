@@ -12,3 +12,4 @@ cd docker-munin-server
 docker-compuse up
 ```
 1. you can check my repo for detail configure
+1. you can put your plugins into /var/lib/muninplugins and this container will automatic soft link for you

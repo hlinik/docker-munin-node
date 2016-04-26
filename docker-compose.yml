@@ -3,5 +3,7 @@ munin-node:
   image: "sahsu/docker-munin-node"
   environment:
    ALLOW: "cidr_allow 0.0.0.0/0"
+  volumes:
+   - "/data/var/lib/plugins:/var/lib/muninplugins"
   privileged: true
   net: "host"
