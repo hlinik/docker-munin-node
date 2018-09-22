@@ -1,5 +1,10 @@
 FROM ubuntu:16.04
 
+# BUILD_DATE and VCS_REF are immaterial, since this is a 2-stage build, but our build
+# hook won't work unless we specify the args
+ARG BUILD_DATE
+ARG VCS_REF
+
 # munin 2.0.55
 RUN apt-get update -y && \
       apt-get install -y munin-node telnet mtr wget dnsutils && \
