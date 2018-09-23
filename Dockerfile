@@ -1,7 +1,6 @@
 FROM ubuntu:16.04
 
-# BUILD_DATE and VCS_REF are immaterial, since this is a 2-stage build, but our build
-# hook won't work unless we specify the args
+# Now we DO need these, for the auto-labeling of the image
 ARG BUILD_DATE
 ARG VCS_REF
 
